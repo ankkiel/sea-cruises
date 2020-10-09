@@ -11,7 +11,7 @@
          url($path+".woff2") format('woff2');
     font-weight: $font-weight;
     font-style: $style;
-    font-display: swap;
+    font-display: $font-display;
   }
 }
 
