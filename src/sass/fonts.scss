@@ -1,40 +1,4 @@
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway Regular'), local('Raleway-Regular'),
-       url('fonts/Raleway-Regular.woff') format('woff'),
-       url('fonts/Raleway-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway Italic'), local('Raleway-Italic'),
-       url('fonts/Raleway-Italic.woff') format('woff'),
-       url('fonts/Raleway-Italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  src: local('Raleway Bold'), local('Raleway-Bold'),
-       url('fonts/Raleway-Bold.woff') format('woff'),
-       url('fonts/Raleway-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: 'Roboto Slab';
-  src: local('Roboto Slab Regular'), local('Roboto-Slab-Regular'),
-       url('fonts/RobotoSlab-Regular.woff') format('woff'),
-       url('fonts/RobotoSlab-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+@include font-face(Raleway,'fonts/Raleway-Regular',400);
+@include font-face(Raleway,'fonts/Raleway-Italic', 400, italic);
+@include font-face(Raleway,'fonts/Raleway-Bold', 400);
+@include font-face(Roboto Slab,'fonts/RobotoSlab-Regular', 400);
