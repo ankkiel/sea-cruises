@@ -65,8 +65,13 @@
     <section class="introduction">
       <div class="introduction__wrapper">
         <a class="introduction__link" href="#">
-          <img alt="Логотип сервиса поиска и бронирования круизов" class="introduction__logo" width="88" height="88"
-            src="img/logo-desktop.png">
+          <picture>
+            <source media="(min-width: 1170px)" srcset="images/common/logo-desktop.webp" type="image/webp">
+            <source srcset="images/common/logo-mobile.webp" type="image/webp">
+            <source media="(min-width: 1170px)" srcset="images/common/logo-desktop.png">
+            <img alt="Логотип сервиса поиска и бронирования круизов" class="introduction__logo"
+              src="images/common/logo-mobile.png">
+          </picture>
         </a>
         <h1 class="introduction__title">Морские прогулки
           <span class="introduction__title-accent">по чёрному морю</span>
@@ -85,8 +90,15 @@
             <div class="catalog-card__promo catalog-card__promo--hit">
               <span class="catalog-card__promo-text">Хит продаж</span>
             </div>
-            <img class="catalog-card__image" src="img/lighthouse-desktop.jpg" alt="Фотография с морского круиза в Анапе"
-              width="555" height="437">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="images/lighthouse-desktop.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="images/lighthouse-tablet.webp" type="image/webp">
+              <source srcset="images/lighthouse-mobile.webp" type="image/webp">
+              <source media="(min-width: 1170px)" srcset="images/lighthouse-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="images/lighthouse-tablet.jpg">
+              <img class="catalog-card__image" src="images/lighthouse-mobile.jpg"
+                alt="Фотография с морского круиза в Анапе" width="290" height="228">
+            </picture>
             <div class="catalog-card__description">
               <a class="catalog-card__link" href="#">
                 <h3 class="catalog-card__title">Морской круиз в Анапу</h3>
@@ -108,8 +120,15 @@
             <div class="catalog-card__promo catalog-card__promo--offer">
               <span class="catalog-card__promo-text">Акция</span>
             </div>
-            <img class="catalog-card__image" src="img/sochi-desktop.jpg"
-              alt="Фотография с обзорной морской прогулки (с экскурсией)" width="555" height="113">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="images/sochi-desktop.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="images/sochi-tablet.webp" type="image/webp">
+              <source srcset="images/sochi-mobile.webp" type="image/webp">
+              <source media="(min-width: 1170px)" srcset="images/sochi-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="images/sochi-tablet.jpg">
+              <img class="catalog-card__image" src="images/sochi-mobile.jpg"
+                alt="Фотография с обзорной морской прогулки (с экскурсией)" width="290" height="228">
+            </picture>
             <div class="catalog-card__description">
               <a class="catalog-card__link" href="#">
                 <h3 class="catalog-card__title">Обзорная морская прогулка с экскурсией</h3>
@@ -132,8 +151,15 @@
             <div class="catalog-card__promo catalog-card__promo--discount">
               <span class="catalog-card__promo-text">Скидка 10%</span>
             </div>
-            <img class="catalog-card__image" src="img/gelendzhik-desktop.jpg"
-              alt="Фотография с морской прогулки в Геленджике" width="555" height="113">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="images/gelendzhik-desktop.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="images/gelendzhik-tablet.webp" type="image/webp">
+              <source srcset="images/gelendzhik-mobile.webp" type="image/webp">
+              <source media="(min-width: 1170px)" srcset="images/gelendzhik-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="images/gelendzhik-tablet.jpg">
+              <img class="catalog-card__image" src="images/gelendzhik-mobile.jpg"
+                alt="Фотография с морской прогулки в Геленджике" width="290" height="229">
+            </picture>
             <div class="catalog-card__description">
               <a class="catalog-card__link" href="#">
                 <h3 class="catalog-card__title">Морская прогулка в Геленджик</h3>
@@ -153,8 +179,15 @@
             </div>
           </li>
           <li class="catalog-card catalog__card">
-            <img class="catalog-card__image" src="img/novorossiysk-desktop.jpg"
-              alt="Фотография из морского круиза в Новороссийске" width="555" height="215">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="images/novorossiysk-desktop.webp" type="image/webp">
+              <source media="(min-width: 768px)" srcset="images/novorossiysk-tablet.webp" type="image/webp">
+              <source srcset="images/novorossiysk-mobile.webp" type="image/webp">
+              <source media="(min-width: 1170px)" srcset="images/novorossiysk-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="images/novorossiysk-tablet.jpg">
+              <img class="catalog-card__image" src="images/novorossiysk-mobile.jpg"
+                alt="Фотография из морского круиза в Новороссийске" width="290" height="229">
+            </picture>
             <div class="catalog-card__description">
               <a class="catalog-card__link" href="#">
                 <h3 class="catalog-card__title">Морской круиз в Новороссийск</h3>
@@ -173,8 +206,11 @@
             </div>
           </li>
           <li class="catalog-card catalog__card">
-            <img class="catalog-card__image" src="img/abrau-desktop.jpg"
-              alt="Фотография с морской прогулки в Абрау-Дюрсо" width="555" height="215">
+            <picture>
+              <source srcset="images/abrau-desktop.webp" type="image/webp">
+              <img class="catalog-card__image" src="images/abrau-desktop.jpg"
+                alt="Фотография с морской прогулки в Абрау-Дюрсо" width="555" height="215">
+            </picture>
             <div class="catalog-card__description">
               <a class="catalog-card__link" href="#">
                 <h3 class="catalog-card__title">Морская прогулка в Абрау-Дюрсо</h3>
@@ -231,24 +267,39 @@
   <section class="modal">
     <div class="modal__wrapper">
       <div class="gallery-pictures modal__gallery">
-        <img src="img/gallery-sea-main-desktop.jpg" alt="Фотография из круиза" class="gallery-pictures__main-image"
-          width="361" height="240">
+        <picture>
+          <source srcset="images/popup/gallery-sea-main-desktop.webp" type="image/webp">
+          <img src="images/popup/gallery-sea-main-desktop.jpg" alt="Фотография из круиза"
+            class="gallery-pictures__main-image" width="361" height="240">
+        </picture>
         <ul class="gallery-pictures__list">
           <li class="gallery-pictures__item">
-            <img src="img/gallery-mountains-desktop.jpg" alt="Фотография гор из круиза" class="gallery-pictures__image"
-              width="83" height="55">
+            <picture>
+              <source srcset="images/popup/gallery-mountains-desktop.webp" type="image/webp">
+              <img src="images/popup/gallery-mountains-desktop.jpg" alt="Фотография гор из круиза"
+                class="gallery-pictures__image" width="83" height="55">
+            </picture>
           </li>
           <li class="gallery-pictures__item">
-            <img src="img/gallery-sea-desktop.jpg" alt="Фотография моря из круиза" class="gallery-pictures__image"
-              width="83" height="55">
+            <picture>
+              <source srcset="images/popup/gallery-sea-desktop.webp" type="image/webp">
+              <img src="images/popup/gallery-sea-desktop.jpg" alt="Фотография моря из круиза"
+                class="gallery-pictures__image" width="83" height="55">
+            </picture>
           </li>
           <li class="gallery-pictures__item">
-            <img src="img/gallery-lake-desktop.jpg" alt="Фотография озера из круиза" class="gallery-pictures__image"
-              width="83" height="55">
+            <picture>
+              <source srcset="images/popup/gallery-lake-desktop.webp" type="image/webp">
+              <img src="images/popup/gallery-lake-desktop.jpg" alt="Фотография озера из круиза"
+                class="gallery-pictures__image" width="83" height="55">
+            </picture>
           </li>
           <li class="gallery-pictures__item">
-            <img src="img/gallery-park-desktop.jpg" alt="Фотография парка из круиза" class="gallery-pictures__image"
-              width="83" height="55">
+            <picture>
+              <source srcset="images/popup/gallery-park-desktop.webp" type="image/webp">
+              <img src="images/popup/gallery-park-desktop.jpg" alt="Фотография парка из круиза"
+                class="gallery-pictures__image" width="83" height="55">
+            </picture>
           </li>
         </ul>
       </div>
