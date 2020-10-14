@@ -9,15 +9,15 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://anastasiaerm.github.io/sea-cruises",
+  "homepage": "https://ankkiel.github.io/sea-cruises",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnastasiaErm/sea-cruises.git"
+    "url": "git+https://github.com/ankkiel/sea-cruises.git"
   },
   "author": "Anastasia Ermolova <anastasia_ermolova@bk.ru>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AnastasiaErm/sea-cruises/issues"
+    "url": "https://github.com/ankkiel/sea-cruises/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
