@@ -5,57 +5,58 @@
   $style: normal,
   $font-display: swap
   ) {
-  @font-face {
-    font-family: quote($font-stack);
-    src: url($path+".woff") format('woff'),
-         url($path+".woff2") format('woff2');
-    font-weight: $font-weight;
-    font-style: $style;
-    font-display: $font-display;
-  }
+	@font-face {
+		font-family: quote($font-stack);
+		font-weight: $font-weight;
+		font-style: $style;
+
+		src: url($path+".woff") format("woff"), url($path+".woff2") format("woff2");
+		font-display: $font-display;
+	}
 }
 
 @mixin text-style(
   $size,
   $font-weight: 400,
-  $line-height: 0,
+  $line-height: 1.15,
   $font-stack: $font-stack-default,
-  $color: $color-text-primary
-) {
-  font-family: $font-stack;
-  font-size: $size;
-  line-height: $line-height;
-  font-weight: $font-weight;
-  color: $color;
+  $color: $color-text-primary) {
+	color: $color;
+
+	font-family: $font-stack;
+	font-size: $size;
+	font-weight: $font-weight;
+	line-height: $line-height;
 }
 
 @mixin reset-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
 }
 
 @mixin tablet {
-  @media (min-width: $width-tablet) {
-      @content;
-  }
+	@media (min-width: $width-tablet) {
+		@content;
+	}
 }
 
 @mixin desktop {
-  @media (min-width: $width-desktop) {
-       @content;
-  }
+	@media (min-width: $width-desktop) {
+		@content;
+	}
 }
 
 @mixin container {
-  margin: 0 auto;
-  padding: 0 15px;
+	@include tablet {
+		width: $width-wrapper-tablet;
+	}
+	@include desktop {
+		width: $width-wrapper-desktop;
+	}
 
-  @include tablet {
-    width: $width-wrapper-tablet;
-  }
-
-  @include desktop {
-    width: $width-wrapper-desktop;
-  }
+	width: $width-wrapper-mobile;
+	margin: 0 auto;
+	padding: 0 15px;
 }
