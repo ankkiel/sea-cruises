@@ -1,0 +1,63 @@
+.main-nav {
+	&__toggle {
+		position: absolute;
+		z-index: 2;
+		top: 25px;
+		left: 0;
+
+		display: block;
+
+		width: 22px;
+		height: 16px;
+		padding: 15px;
+
+		color: transparent;
+		border: none;
+		background: url(../images/common/menu-toggle.svg) no-repeat 50% 50%;
+		background-color: transparent;
+
+		font-size: 0;
+		line-height: 0;
+	}
+
+	&__lists-wrapper {
+		@include container;
+		@include tablet {
+			position: absolute;
+			z-index: 1;
+			top: 30px;
+			right: 0;
+
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+
+			margin: 0 auto;
+		}
+
+		display: none;
+	}
+
+	&__user-list {
+		@include tablet {
+			display: flex;
+		}
+
+		display: none;
+	}
+
+	&__contact-tel {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__contacts-list {
+		@include tablet {
+			align-items: flex-start;
+		}
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+}
