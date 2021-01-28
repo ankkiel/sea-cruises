@@ -4,8 +4,8 @@
 
 	list-style: none;
 
-	color: inherit;
-	background-color: #0d3351;
+	color: $color-text-contrast;
+	background-color: $color-text-primary;
 
 	&__link {
 		display: inline-block;
@@ -16,12 +16,18 @@
 		vertical-align: middle;
 		text-decoration: none;
 
-		color: #fff;
+		color: $color-text-contrast;
 
 		font-size: 18px;
 
 		&:hover {
-			opacity: 0.7;
+			transition-timing-function: linear;
+			transition-duration: 0.5s;
+			transition-property: background-color;
+
+			opacity: 0.8;
+			color: $color-text-primary;
+			background-color: $color-decoration-primary;
 		}
 	}
 
