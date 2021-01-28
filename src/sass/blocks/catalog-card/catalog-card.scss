@@ -5,6 +5,8 @@
 
 	background-color: $color-bg-contrast;
 
+	animation-fill-mode: both;
+
 	&__link {
 		text-decoration: none;
 	}
@@ -121,6 +123,32 @@
 		color: $color-text-contrast;
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='89' height='101'%3E%3Cpath d='M0 0v101l44-19 45 19V0H0z' fill='%2333c7fd' fill-rule='evenodd'/%3E%3C/svg%3E%0A");
 		background-repeat: no-repeat;
+
+		&:hover {
+			transform-origin: top center;
+			animation-name: swing;
+			animation-duration: 1s;
+
+			animation-fill-mode: both;
+		}
+
+		@keyframes swing {
+			20% {
+				transform: rotate3d(0, 0, 1, 15deg);
+			}
+			40% {
+				transform: rotate3d(0, 0, 1, -10deg);
+			}
+			60% {
+				transform: rotate3d(0, 0, 1, 5deg);
+			}
+			80% {
+				transform: rotate3d(0, 0, 1, -5deg);
+			}
+			100% {
+				transform: rotate3d(0, 0, 1, 0deg);
+			}
+		}
 	}
 
 	&__promo--hit {
